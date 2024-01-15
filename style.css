@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* 
+Tamanhos
+- Mobile: 375px
+- Desktop: 1440px
+*/
+/* Variáveis */
+/* Fontes do Google */
+/* Cores */
+/* Reset CSS */
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Margem default */
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Removendo estilos de listas */
+ul[role=list], ol[role=list] {
+  list-style: none;
+}
+
+/* Padrões para body */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 0.9375;
+}
+
+/* Elementos sem classes receberão estilos default */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Pré-configurações de imagens */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Media Query */
+@media only screen and (max-width: 375px) {
+  .card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  h1 {
+    font-size: 0.5rem;
+    font-weight: 700;
+    margin: 1rem 0.5rem;
+  }
+  p {
+    font-size: 0.25rem;
+    font-weight: 400;
+    margin: 1rem 0.5rem;
+  }
+}
+/* Estilização principal */
+body {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(212, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-optical-sizing: auto;
+}
+
+.card {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  max-width: 405px;
+  min-width: 330px;
+  padding: 1.25rem;
+  background: hsl(0, 0%, 100%);
+  color: hsl(218, 44%, 22%);
+  border-radius: 1.5rem;
+  border: none;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.65rem;
+  font-weight: 700;
+  margin: 1rem 1.25rem;
+}
+
+p {
+  color: hsl(220, 15%, 55%);
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0rem 1.25rem 1rem 1.25rem;
+}/*# sourceMappingURL=style.css.map */
